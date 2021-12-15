@@ -1,0 +1,5 @@
+curl \
+  --header 'Authorization: 017c3b74915b14f58fe2ac89c915ee55' \
+  --header 'journey_id: 017c3b7cd5ad7f2d2abb492b1f7469e6' \
+  --header 'session_key: 017c3b847ae1cc5a6310b013b8a9f7d9' \
+  'https://super-cool-tours.touramigo.com/api/v1/search?month=2022_10'

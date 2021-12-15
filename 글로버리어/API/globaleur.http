@@ -1,0 +1,76 @@
+
+### 1.1 Category List
+GET /v1/categories?lang=ko HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+### 2.1 City List
+GET /v1/cities?lang=ko&offset=0&limit=10&include_copyrighted_photos=true&country_id=5e5eb8e00966e26221ddb128 HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+### 2.2 City Nearby
+GET /v1/cities/nearby?coordinates=-122.459696,47.608013&radius=100000&exclude_cities=507f191e810c19729de860ea,507f191e810c19729de860eb&limit=10&include_copyrighted_photos=true&lang=ko HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+### 2.3 City Countries 
+GET /v1/cities/countrysearch?query=ame&lang=ko&limit=10&include_copyrighted_photos=true HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+### 2.4 City Autocomplete
+GET /v1/cities/autocomplete?query=sea&lang=ko&limit=10&include_copyrighted_photos=true HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+### 2.5 City Details
+GET /v1/cities/5e5ed54301b751678fee214e?include_copyrighted_photos=true&lang=ko HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+### 3.1 Country List
+GET /v1/countries?offset=1&limit=20&lang=ko HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+### 3.2 Country Autocomplete
+GET /v1/countries/autocomplete?query=미국&lang=ko HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+### 3.3 Country Details
+GET /v1/countries/5e5eb8e00966e26221ddb128?lang=ko HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+### 4.1 Place List
+GET /v1/places?city_id=5e5ed54301b751678fee214e&category_id=5e5e195cd2101d58dc15f994&category=Nature %26 Parks&offset=0&limit=1&operational_statuses=OPERATIONAL&lang=ko&include_copyrighted_photos=true HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+### 4.2 Place Regions
+GET /v1/places/regions?city_id=5e5ed54301b751678fee214e&offset=0&limit=10&operational_statuses=OPERATIONAL&lang=ko&include_copyrighted_photos=true HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+
+### 4.3 Place Boundary
+GET /v1/places/within?boundary=-122.350479,47.620651, -122.359917,47.629711,-122.351944,47.61927&region_id=5ef9bae255db370a089cd664&offset=0&limit=10&operational_statuses=OPERATIONAL&lang=ko&include_copyrighted_photos=true HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+### 4.4 Place Nearby
+GET /v1/places/nearby?coordinates=-122.350479,47.620651&radius=10000&city_id=5e5ed54301b751678fee214e&limit=10&operational_statuses=OPERATIONAL&lang=ko&include_copyrighted_photos=true HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+### 4.5 Place Autocomplete
+GET /v1/places/autocomplete?query=치&city_id=5e5ed54301b751678fee214e&operational_statuses=OPERATIONAL&lang=ko&include_copyrighted_photos=true HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
+
+### 4.6 Place Details
+GET /v1/places/5e5f24bde5649377904643b5?lang=ko&fields=visit_duration&include_copyrighted_photos=true HTTP/1.1
+Host: api.demo.globaleur.com
+x-api-key: key_TYgO9oXINRX1Rz5aoZjJ6mdy3z5R7sbB
